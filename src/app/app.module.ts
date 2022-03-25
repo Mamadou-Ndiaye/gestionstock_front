@@ -8,6 +8,7 @@ import { InscriptionComponent } from './pages/inscription/inscription.component'
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { FooterComponent } from './pages/footer/footer.component';
+import { StatistiqueComponent } from './pages/statistique/statistique.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './pages/footer/footer.component';
     InscriptionComponent,
     DashboardComponent,
     MenuComponent,
-    FooterComponent
+    FooterComponent,
+    StatistiqueComponent
   ],
   imports: [
     BrowserModule,
