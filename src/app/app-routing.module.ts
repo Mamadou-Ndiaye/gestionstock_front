@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NouvelarticleComponent } from './pages/articles/nouvelarticle/nouvelarticle.component';
 import { PageArticleComponent } from './pages/articles/page-article/page-article.component';
+import { PageClientComponent } from './pages/clients/page-client/page-client.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { InscriptionComponent } from './pages/inscription/inscription.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -36,6 +37,10 @@ const routes: Routes = [
      {
       path: 'mvtstk',
       component: PageMvtstkComponent
+     } ,
+     {
+      path: 'clients',
+      component: PageClientComponent
      }
     ]
   }
