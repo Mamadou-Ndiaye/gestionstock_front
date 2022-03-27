@@ -1,0 +1,166 @@
+<!-- <div class="container">
+
+
+  <header class="navbar navbar-expand-md navbar-light bg-light px-3">
+    <a href="#" class="navbar-brand">
+        <img src="../assets/one2Learn-Logo.png" alt="Logo One2Learn">
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-content">
+        <nav>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"  routerLinkActive=active [routerLinkActiveOptions]="{exact: true}" ><a class="nav-link"  [routerLink]="['/']">Accueil</a></li>
+                <li class="nav-item"  routerLinkActive=active [routerLinkActiveOptions]="{exact: true}" ><a class="nav-link" [routerLink]="['/dashboard']">Dashboard</a></li>
+                <li class="nav-item dropdown"  routerLinkActive=active [routerLinkActiveOptions]="{exact: true}" ><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">À propos</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Item 1</a></li>
+                        <li><a class="dropdown-item" href="#">Item 2</a></li>
+                        <li><a class="dropdown-item" href="#">Item 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"  routerLinkActive=active [routerLinkActiveOptions]="{exact: true}" ><a class="nav-link" [routerLink]="['/register']">Créer compte</a></li>
+            </ul>
+        </nav>
+        <form action="" id="searchForm" class="ms-auto">
+            <div class="input-group">
+                <input type="search" name="q" placeholder="Rechercher" class="form-control">
+                <button type="submit" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                </button>
+            </div>
+        </form>
+    </div>
+    <button type="button" class="btn btn-primary ms-3" data-bs-toggle="offcanvas" data-bs-target="#userTools">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg>
+    </button>
+</header>
+
+</div>
+ -->
+
+
+
+
+
+
+<!-- 
+<section class="card">
+    <div class="card-header bg-primary text-white">
+        <h1 class="h5">Gestion Stock</h1>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <a href="#">Catégorie 1</a>
+            <span class="badge bg-primary rounded-pill">3</span>
+        </li>
+        <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <a href="#">Catégorie 2</a>
+            <span class="badge bg-primary rounded-pill">10</span>
+        </li>
+        <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <a href="#">Catégorie 3</a>
+            <span class="badge bg-primary rounded-pill">7</span>
+        </li>
+        <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <a href="#">Catégorie 4</a>
+            <span class="badge bg-primary rounded-pill">12</span>
+        </li>
+        <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <a href="#">Catégorie 5</a>
+            <span class="badge bg-primary rounded-pill">8</span>
+        </li>
+    </ul>
+</section>
+ -->
+
+<section class="card">
+    <div class="card-header bg-primary text-white">
+        <h1 class="h5">Gestion Stock</h1>
+    </div>
+    <div class="accordion accordion-flush" id="accordionExample">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <i class="fas fa-chart-line me-2"></i>Tableau de bord   
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                  <div> <i class="fas fa-eye me-2 color-blue"></i> <a href=""  class="fs-6">  <code>Vue ensemble </code></a> </div>
+                   <div> <i class="fas fa-chart-bar me-2   color-blue "></i>  <a  routerLink="statistique"   class="fs-6">  <code> Statistique</code></a> </div>
+            </div>
+          </div>
+        </div>
+    
+    
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <i class="fa-brands fa-product-hunt me-2"></i> Articles
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div><i class="fab fa-amilia me-2 color-blue"></i><a routerLink="articles"   class="fs-6">  <code>Articles </code></a> </div>
+                <div> <i class="fas fa-warehouse me-2  color-blue"></i> <a routerLink="mvtstk"  class="fs-6">  <code>Mouvement Stock</code></a> </div>
+            </div>
+          </div>
+        </div>
+    
+    
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <i class="fa-solid fa-users-line me-2"></i> Clients
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div>  <i class="fa-solid fa-users-line me-2 color-blue"></i> <a href="" class="fs-6">  <code>Clients </code></a> </div>
+                <div> <i class="fas fa-shopping-cart me-2 color-blue"></i> <a href="" class="fs-6">  <code>Commandes Clients</code></a> </div>
+            </div>
+          </div>
+        </div>
+    
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <i class="fa-solid fa-building-user me-2"></i> Fournisseurs
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div>   <i class="fa-solid fa-users-line me-2 color-blue"></i> <a href="" class="fs-6">  <code>Fournisseurs </code></a> </div>
+                <div> <i class="fas fa-shopping-cart me-1 color-blue"></i> <a href="" class="fs-6">  <code>Commandes Fournisseurs</code></a> </div>  
+               </div>
+            </div>
+          </div>
+    
+    
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <i class="fa-solid fa-screwdriver-wrench me-2"></i> Parémètrage
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div> <i class="fas fa-flag-checkered me-2 color-blue"></i><a href=""  class="fs-6">  <code>Catégorie </code></a> </div>
+                <div>  <i class="fa-solid fa-users me-2 color-blue "></i> <a href=""  class="fs-6">  <code> Utilisateurs</code></a> </div>
+              </div>
+            </div>
+          </div>
+      
+      </div>
+</section>
+
+

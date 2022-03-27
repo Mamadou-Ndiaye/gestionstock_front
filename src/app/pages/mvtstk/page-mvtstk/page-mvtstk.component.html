@@ -1,0 +1,61 @@
+<div class=" card row ms-2 me-0 mt-3">
+    <div class="row mt-2">
+         <div class="col-md-6"> <h5> Mouvements du Stock </h5> </div>
+         <div class="col-md-6">
+               <app-button-action></app-button-action>
+         </div>
+    </div>
+
+    <div class="row w-100 mt-3 mb-3">
+          <section class="card">
+                <div class=" accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button  class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <div class="col-md-12">
+                                    <app-detail-mvtstk-article></app-detail-mvtstk-article>
+                                </div>
+                            </button>
+                            
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse card" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" style="max-height: 300px; overflow-y: scroll;">
+                            <app-detail-mvtstk ></app-detail-mvtstk>
+                            <app-detail-mvtstk ></app-detail-mvtstk>
+                            <app-detail-mvtstk ></app-detail-mvtstk>
+                            <app-detail-mvtstk ></app-detail-mvtstk>
+                            <app-detail-mvtstk ></app-detail-mvtstk>
+                            <app-detail-mvtstk ></app-detail-mvtstk>
+                            <app-detail-mvtstk ></app-detail-mvtstk>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button  class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <div class="col-md-12">
+                                    <app-detail-mvtstk-article></app-detail-mvtstk-article>
+                                </div>
+                            </button>
+                            
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse card" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample" style="max-height: 300px; overflow-y: scroll;">
+                            <app-detail-mvtstk ></app-detail-mvtstk>
+                            <app-detail-mvtstk ></app-detail-mvtstk>
+                            <app-detail-mvtstk ></app-detail-mvtstk>
+                            <app-detail-mvtstk ></app-detail-mvtstk>
+                            <app-detail-mvtstk ></app-detail-mvtstk>
+                            <app-detail-mvtstk ></app-detail-mvtstk>
+                            <app-detail-mvtstk ></app-detail-mvtstk>
+                        </div>
+                    </div>
+
+               </div>
+          </section>
+    </div>
+
+
+    <div class="row ">
+         <app-pagination></app-pagination>
+     </div>
+
+</div>
