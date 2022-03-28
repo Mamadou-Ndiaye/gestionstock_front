@@ -9,6 +9,7 @@ import { PageFournisseursComponent } from './pages/fournisseurs/page-fournisseur
 import { InscriptionComponent } from './pages/inscription/inscription.component';
 import { LoginComponent } from './pages/login/login.component';
 import { PageMvtstkComponent } from './pages/mvtstk/page-mvtstk/page-mvtstk.component';
+import { PageCmdCltFrsComponent } from './pages/page-cmd-clt-frs/page-cmd-clt-frs.component';
 import { StatistiqueComponent } from './pages/statistique/statistique.component';
 
 const routes: Routes = [
@@ -49,12 +50,20 @@ const routes: Routes = [
       component:  NouveauCltFrsComponent
      } ,
      {
+      path: 'commandesclient',
+      component:  PageCmdCltFrsComponent
+     } ,
+     {
       path: 'fournisseurs',
       component: PageFournisseursComponent
      },
      {
       path: 'nouveaufournisseur',
       component: NouveauCltFrsComponent
+     } ,
+     {
+      path: 'commandesfournisseur',
+      component:  PageCmdCltFrsComponent
      }
     ]
   }
